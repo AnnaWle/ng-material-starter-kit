@@ -23,7 +23,7 @@
   <div>
     <mat-form-field appearance="fill">
       <mat-label>Category</mat-label>
-  <mat-select>
+  <mat-select formControlName="category">
     <mat-option *ngFor="let item of list$ | async" [value]="item">
      {{item}}
     </mat-option>
